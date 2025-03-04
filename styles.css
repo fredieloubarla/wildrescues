@@ -1,0 +1,393 @@
+/*
+Author: Fredielou Barla
+File Name: styles.css
+Date: 11/14/2024
+*/
+
+/* CSS Reset */
+h1,
+h3 {
+  text-decoration: none;
+  text-align: center;
+}
+
+body,
+header,
+nav,
+main,
+footer,
+img,
+video,
+h1,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+body {
+  background-color: #f6eee4;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Style rules for navigation area */
+nav {
+  background-color: #2a1f14;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav li {
+  margin: 0 8px;
+}
+
+nav li a {
+  display: block;
+  color: #f6eee4;
+  text-decoration: none;
+  padding: 5px 8px;
+  font-size: 0.9em;
+}
+nav li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 600px) {
+  .tab-desk,
+  .desktop,
+  #nav-links {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile h1 {
+    margin: 2% 0 0 3%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  nav-li {
+    margin: 5px 0;
+  }
+  #contact-info {
+    padding: 15px;
+    text-align: center;
+  }
+  form {
+    width: 100%;
+    margin: 0;
+  }
+  .form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+}
+/* Style rules for main content */
+main {
+  padding: 2%;
+  font-family: "Lora", serif;
+}
+
+main p {
+  font-size: 1.2em;
+}
+
+main h3 {
+  padding-top: 2%;
+}
+
+main ul {
+  list-style-type: square;
+}
+
+/* Style rules for class and ID selectors */
+.link {
+  color: #4d3319;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.action {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.round {
+  border-radius: 6px;
+}
+
+#info ul {
+  margin-left: 10%;
+}
+
+#contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+#contact h2 {
+  font-size: 1.25em;
+}
+
+.contact-heading {
+  font-size: 1.25em;
+  text-align: left;
+}
+/* Style rule for .tel-link class */
+.tel-link {
+  background-color: #2a1f14;
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style rules for footer content */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eee4;
+  padding: 1% 0;
+}
+
+footer a {
+  color: #f3e6d8;
+  text-decoration: none;
+}
+
+/*Style Rules for images*/
+.social img {
+  display: inline-block;
+  padding: 4%;
+}
+
+/* Tablet viewport */
+/*Table Viewport: Style Rules for footer area*/
+footer {
+  overflow: auto;
+}
+.copyright {
+  float: left;
+  width: 65%;
+}
+.social {
+  float: right;
+  width: 25%;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  #nav-links {
+    display: flex;
+    justify-content: center;
+  }
+  nav li {
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  nav li a {
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .mobile-nav {
+    display: none;
+    form {
+      width: auto;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+    }
+
+    .btn {
+      grid-column: 1 / span 2;
+    }
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora:ital,wght@0,400;1,400&display=swap");
+
+.mobile h1,
+.mobile h3 {
+  padding: 2%;
+  text-align: center;
+}
+
+.mobile h1 {
+  font-family: "Emblema One", cursive;
+  margin: 2% 0 0 3%;
+}
+
+.mobile h3 {
+  font-family: "Lora", serif;
+}
+
+@media (min-width: 1025px) {
+  .desktop {
+    display: block;
+  }
+  .mobile-tablet {
+    display: none;
+  }
+  .mobile-nav {
+    display: none; /* Hides the hamburger menu on desktop */
+  }
+
+  table {
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th,
+  td {
+    border: 1px solid #2a1f14;
+    padding: 1%;
+  }
+
+  th {
+    background-color: #2a1f14;
+    color: #fff;
+    font-size: 1.15em;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #deccba;
+  }
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.nav-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f6eee4;
+  padding: 2%;
+}
+
+.nav-icon div {
+  height: 40px;
+  width: 40px;
+  color: #2a1f14;
+}
+
+/*tablet nav area style rules*/
+
+#questions p {
+  cursor: pointer;
+}
+
+#answer {
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#answer h2 {
+  display: none;
+}
+
+#nav-links {
+  display: none;
+}
+
+#nav-links.active {
+  display: block;
+}
+
+#icon {
+  color: #2a1f14;
+}
+
+#icon.open {
+  color: #f6eee4;
+}
+/*Style rules for skip navigation link*/
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus {
+  color: #fff;
+  background-color: #2a1f14;
+  text-decoration: none;
+  padding: 0.5%;
+  top: auto;
+  left: auto;
+  right: 1px;
+  z-index: 1;
+}

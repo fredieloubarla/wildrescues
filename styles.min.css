@@ -1,0 +1,320 @@
+.link,
+h1,
+h3,
+nav li a {
+  text-decoration: none;
+}
+#contact-info,
+.action,
+h1,
+h3,
+nav {
+  text-align: center;
+}
+#answer,
+.action,
+.link,
+.tel-link a {
+  font-weight: 700;
+}
+#answer,
+.tel-link {
+  width: 80%;
+  margin: 0 auto;
+}
+#icon.open,
+.tel-link a,
+footer,
+nav li a {
+  color: #f6eee4;
+}
+body,
+footer,
+h1,
+h3,
+header,
+img,
+main,
+nav,
+ul,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background-color: #f6eee4;
+}
+.skip:focus,
+.tel-link,
+footer,
+nav {
+  background-color: #2a1f14;
+}
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+nav li {
+  margin: 0 8px;
+}
+nav li a {
+  display: block;
+  padding: 5px 8px;
+  font-size: 0.9em;
+}
+nav li:last-child {
+  border-bottom: none;
+}
+@media (max-width: 600px) {
+  .form-grid,
+  nav ul {
+    flex-direction: column;
+  }
+  #nav-links,
+  .desktop,
+  .tab-desk {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .mobile h1 {
+    margin: 2% 0 0 3%;
+  }
+  nav ul {
+    align-items: center;
+    gap: 5px;
+  }
+  nav-li {
+    margin: 5px 0;
+  }
+  #contact-info {
+    padding: 15px;
+    text-align: center;
+  }
+  form {
+    width: 100%;
+    margin: 0;
+  }
+  .form-grid {
+    display: flex;
+    gap: 15px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+}
+main {
+  padding: 2%;
+  font-family: Lora, serif;
+}
+main p {
+  font-size: 1.2em;
+}
+main h3 {
+  padding-top: 2%;
+}
+main ul {
+  list-style-type: square;
+}
+.link {
+  color: #4d3319;
+  font-style: italic;
+}
+.action {
+  font-size: 1.75em;
+}
+#contact h2,
+.contact-heading {
+  font-size: 1.25em;
+}
+.round {
+  border-radius: 6px;
+}
+#info ul {
+  margin-left: 10%;
+}
+#contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contact-heading {
+  text-align: left;
+}
+#answer,
+.mobile h3,
+.mobile-nav a,
+.tel-link,
+footer {
+  text-align: center;
+}
+.tel-link {
+  padding: 2%;
+}
+.tel-link a {
+  text-decoration: none;
+}
+.mobile-nav a,
+.skip:focus {
+  color: #fff;
+  text-decoration: none;
+}
+footer {
+  font-size: 0.85em;
+  padding: 1% 0;
+  overflow: auto;
+}
+footer a {
+  color: #f3e6d8;
+  text-decoration: none;
+}
+.social img {
+  display: inline-block;
+  padding: 4%;
+}
+#nav-links.active,
+.mobile-nav a {
+  display: block;
+}
+.copyright {
+  float: left;
+  width: 65%;
+}
+.social {
+  float: right;
+  width: 25%;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  #nav-links {
+    display: flex;
+    justify-content: center;
+  }
+  nav li {
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: 700;
+  }
+  nav li a {
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+.mobile h1 {
+  font-family: "Emblema One", cursive;
+  margin: 2% 0 0 3%;
+}
+.mobile h3 {
+  padding: 2%;
+  font-family: Lora, serif;
+}
+@media (min-width: 1025px) {
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .btn {
+    grid-column: 1 / span 2;
+  }
+  table,
+  td,
+  th {
+    border: 1px solid #2a1f14;
+  }
+  .desktop {
+    display: block;
+  }
+  .mobile-nav,
+  .mobile-tablet {
+    display: none;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  caption {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 1%;
+  }
+  td,
+  th {
+    padding: 1%;
+  }
+  th {
+    background-color: #2a1f14;
+    color: #fff;
+    font-size: 1.15em;
+  }
+  tr:nth-child(odd) {
+    background-color: #deccba;
+  }
+}
+.mobile-nav a {
+  font-size: 2em;
+  padding: 3%;
+}
+#icon,
+.nav-icon div {
+  color: #2a1f14;
+}
+.mobile-nav a.nav-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f6eee4;
+  padding: 2%;
+}
+.nav-icon div {
+  height: 40px;
+  width: 40px;
+}
+#questions p {
+  cursor: pointer;
+}
+#answer h2,
+#nav-links {
+  display: none;
+}
+.skip {
+  position: absolute;
+  left: -999px;
+}
+.skip:focus {
+  padding: 0.5%;
+  top: auto;
+  left: auto;
+  right: 1px;
+  z-index: 1;
+}
